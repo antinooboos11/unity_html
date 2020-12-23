@@ -1,0 +1,59 @@
+.fmenu{
+  background-color: $color-bg;
+  width: 313px;
+  height: 461px;
+  margin: 0 auto;
+  margin-top: 104px;
+  border: 1px solid $color-second;
+  border-radius: 7px;
+  padding-left: 23px;
+  padding-top: 23px;
+  padding: 23px 23px 15px 23px;
+  &__logo2{
+    img{
+    width: 113px;
+    height: 40px;
+    }
+  }
+  &__links{
+    margin-top: 142px;
+    margin-left: 1px;
+    display: flex;
+    flex-direction: column;
+    height: 156px;
+
+    a{
+      color: $color-second;
+      height: 15px;
+      font-size: 14px;
+      display: block;
+      margin-top: 21px;
+      line-height: 16px;
+      &:nth-child(1){
+        margin-top: 0px;
+      }
+      //text-decoration-line: underline;
+    }
+  }
+  span{
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 21px;
+  }
+  &__social{
+    @include flex__cb;
+    margin: 0 auto;
+    width: 190px;
+    height: 30px;
+    margin-top: 21px;
+    img{
+      width: 30px;
+    }
+  }
+}

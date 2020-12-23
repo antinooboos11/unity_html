@@ -1,0 +1,242 @@
+html, body, main {
+  color: $color-second;
+  font-family: $font-main;
+  min-width: 375px;
+  overflow: unset;
+}
+
+/* ШАПКА*/
+.header{
+  width: 100%;
+  height: 48px;
+  color: $color-second;
+  background-color: $color-second;
+ 
+  &__nav{
+   @include flex__cb;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    color: $color-second;
+    background-color: $color-second;
+    z-index: 5;
+
+    .enter{
+      display: none;
+    }
+    .header__left, .header__right,.header__select, .header__menu{
+      margin-right: 8px;
+    }
+  
+  }
+  &__left{
+    position: relative;
+   @include flex__ca;
+    float: left;
+    z-index: 10;
+    max-width: 330px;
+    height: 48px;
+    background: $color-second;
+    border: 1px solid $color-bg;
+    border-radius: 7px;
+    padding: 5px 7px 5px 5px;
+   
+  }
+  &__logo{
+    display:flex;
+    width: 100px;
+    height:35px;
+    img{
+      height: 100%;
+    }
+  }
+  &__bar{
+    width: 1px;
+    height: 37px;
+    background: $color-bg;
+    margin-left: 7px;
+
+  }
+  &__search{
+    margin-left: 7px;
+    max-width: 100%;
+    height: 32px;
+  }
+  &__right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .headers__select{
+      width: 315px;
+      height: 30px;
+      @include flex__ca;
+      border-radius:5px;
+      background: $color-bg;
+      font-size: 18px;
+      @include input;
+      padding: 3px 0px 0px 0px;
+      z-index: 5;
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__select{
+    position: absolute;
+    right: 41px;
+    height: 30px;
+    width: 154px;
+    padding: 10px 10px;
+    @include flex__ca;
+    background-color: $color-bg;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 17px;
+    z-index: 1;
+    input{
+      #1:checked + label{
+        color: rgb(255, 0, 0);
+      }
+    }
+    
+    .header__bar{
+      height: 18px;
+      background: $color-second;
+      margin-right: 8px;
+    }
+    input{
+      display: none;
+    }
+    input:checked + label {
+     color:red;
+  }
+  }
+  &__menu{
+    position: absolute;
+    right: 0px;
+    height: 32px;
+    width: 32px;
+    z-index: 10;
+  }
+  &__cm {
+    margin-top: 48px;
+    width: 100%;
+    height: 80px;
+    background-color: $color-bg;
+    line-height: 80px;
+    text-align: center;
+  }
+}
+
+/* поиск */
+.search-box{
+  margin-left: 7px;
+  background: $color-main;
+  max-width: 100%;
+  height: 32px;
+  border-radius: 9px;
+  @include flex__cc;
+  
+}
+.search-btn{
+  float: right;;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.search-box:hover > .search-txt
+{
+  width: 164px;
+  padding-left: 10px;
+}
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: $color-second;
+  font-size: 13px;
+  transition: 0.4s;
+  line-height: 32px;
+  width: 0px;
+  transition: 0.4s;
+}
+
+@media(min-width:769px){
+ .header{
+   &__left{
+     max-width:400px;
+   }
+   position: relative;
+   background: none;
+   &__nav{
+     position: relative;
+     margin: 0 auto;
+     width: 910px;
+     background: $color-second ;
+     border: 1px solid $color-bg;
+     border-radius:7px;
+     height: 50px;
+     align-self: center;
+    .enter{
+      width: 94px;
+      height: 36px;
+      background-color: $color-bg;
+      right: 1px;
+      @include bg__border;
+      @include flex__cb;
+      flex-direction: column;
+      span{
+        font-size: 20px;
+        line-height: 36px;
+      }
+    }
+   }
+   &__select{
+    position: absolute;
+    left: 200px;
+    height: 35px;
+    width: 176px;
+    padding: 10px 10px;
+    @include flex__ca;
+    background-color: $color-bg;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 17px;
+    z-index: 1;
+    margin: 0;
+    label{
+      font-size: 22px;
+      line-height: 20px;
+    }
+   }
+   &__menu{
+     display: none;
+   }
+   &__right{ 
+    @include flex__cb;
+      .headers__select{
+      width: 326px;
+      height: 35px;
+      top: 7px;
+      left: 580px;
+      label{
+        font-style: normal;
+        font-weight: normal;
+         font-size: 18px;
+       }
+    }
+   }
+ 
+ }
+ .search-box:hover > .search-txt{
+  width: 215px;
+  padding-left: 10px;
+}
+}

@@ -1,0 +1,71 @@
+.noscroll{
+  height: 100%;
+.main{
+  padding: 0px;
+ overflow: none;
+  &__inner{
+    .container__player {
+      min-width: 375px;
+      height: 100%;
+      margin-left: -36px;
+      margin-right: -36px;
+      position: absolute;
+      .content__player {
+        width: 375px;
+        height: 195px;
+        background-color: #FFFFFF;
+        top: 5px;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: solid 2px #0F1533;
+        position: absolute;  
+       
+    }
+  }
+  }
+ }
+}
+@media(max-width:769px){
+  .noscroll{
+    .main{
+      overflow: visible;
+      
+    }
+  }
+}
+
+@media(min-width:769px){
+  .container{
+    padding:0;
+  }
+  .noscroll{
+    .main{
+      
+      .playerbox{
+        .main__inner{
+        margin: 0;
+        display: flex;
+         flex-direction: column;
+         .content__mainheader{
+           margin: 0 auto;
+         }
+          .container__player{
+            width: 100%;
+            height: 100%;
+            flex: 1 0;
+            margin: 0 auto;
+            position: relative;
+            object-fit: cover;
+            .content__player{
+              width: 100%;
+              height: 100%;
+              flex: 1 0;
+              position: relative;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}

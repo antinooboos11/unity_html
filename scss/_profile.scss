@@ -1,0 +1,427 @@
+@media (max-width:769px){
+.body{
+  background: $color-second;  
+}
+}
+
+.main{
+  height: 333px;
+  margin-top: 7px;
+  background: $color-bg;
+  border-radius: 7px;
+  margin: 0 auto;
+ 
+  &__cm{
+    display: none;
+  }
+  &__profiles{
+    width: 275px;
+    margin: 0 auto;
+  }
+  &__info{
+    margin: 0 auto;
+    width: 255px;
+    height: 80px;
+    @include flex__cb;
+    padding: 5px 6px;
+    position: relative;
+    &::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-second-bg;
+      position: absolute;
+      bottom: -2px;
+      left: -1px;
+    }
+    .image__pc{
+      display: none;
+    }
+    img{
+      width: 52px;
+      height: 52px;
+    }
+  }
+  &__infotext{
+    width: 191px;
+    height: 52px;
+    padding: 0px 0px 0px 10px ;
+    display: block;
+    span{
+      display: block;
+      margin: 0 auto; 
+      max-width: 181px;
+      height: 25px;
+      top: 4px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+  &__profile{
+    margin: 0 auto;
+    margin-top: 17px;
+    width: 275px;
+    height: 179px;
+    background: $color-main;
+    border-radius: 5px;
+  }
+  &__initial{
+    position: relative;
+    max-width: 668px;
+    height: 111px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px 10px 0px 10px;
+      .item{
+        height: 33px;
+        width: 122px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2px;
+      }
+      .safe{
+        display: none;
+      }
+      .exitt{
+        display: none;
+      }
+      .empty{
+        display: none;
+      }
+    span{
+      display: block;
+      height: 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 9px;
+      margin-left: 2px;
+      margin-bottom: 2px;
+      color: $color-second;
+    }
+    input{
+      margin-top: 1px;
+      width: 122px;
+      height: 17px;
+      font-size: 11px;
+      line-height: 10px;
+      outline: none;
+      border:none;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius:3px;
+      color: $color-second;
+      padding-left: 4px;
+    }
+
+  }
+
+  &__sex{
+    margin-top: 1px;
+    width: 122px;
+    height: 17px;
+    padding: 0 5px;
+    font-size: 11px;
+    @include flex__cb;
+    align-self:space-between;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius:2px;
+    input{
+      display: none;
+    }
+    input:checked + label {
+     color:red;
+  }
+    label{
+      font-size: 11px;
+    }
+  }
+  &__sexbar{
+    width: 1px;
+    height: 11px;
+    background: $color-second;
+  }
+
+  &__theme{
+    @include flex__cb;
+    width: 255px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: rgba($color: #929292, $alpha: 0.1) ;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 0px 10px 0px 10px;
+ 
+  }
+  &__themeLeft{
+    span{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  &__themeRight{
+    @include flex__cb;
+    width: 104px;
+    .blue, .black , .white{
+      width: 28px;
+      height: 28px;
+      border-radius: 5px;
+    }
+    .blue{
+      background: $color-bg;
+    }
+    .black{
+      background: #000000;
+    }
+    .white{
+      background: #fff;
+    }
+    input{
+      display: none;
+    }
+    input:checked + label {
+      outline: none;
+      text-decoration: none;
+      border: 2px solid rgb(255, 0, 0);
+   }
+  }
+
+
+  input[type='submit']{
+    @include flex__cb;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 15px; 
+    background: rgba(255, 255, 255, 0.3);
+    border:none;
+    padding: 5px;
+    width: 97px;
+    height: 29px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $color-second;
+    border-radius:5px;
+  }
+ 
+  &__exit{
+    width: 131px;
+    height: 35px;
+    background: $color-main;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    @include flex__cb;
+    flex-direction: column;
+  }
+  
+}
+
+//media
+@media (min-width:769px){
+  .contop{
+    position: absolute;
+    bottom:36px;
+    width: 100%;
+  }
+  .body{
+    background: $color-body;
+  }
+
+
+
+.main{
+width: 910px;
+height: 504px;
+padding: 25px;
+display: flex;
+border:1px solid $color-border;
+border-radius:20px;
+&__info{
+  margin: 0 auto;
+  width: 500px;
+  height: 70px;
+  &::after{
+    display: none;
+  }
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  .image__mobile{
+    display: none;
+  }
+  .image__pc{
+    display: block;
+  }
+}
+&__infotext{
+  display: flex;
+  flex-direction: column;
+  width: 467px;
+  height: 70px;
+  .span1,.span2{
+    width: 457px;
+    max-height: 100%;
+  }
+  .span1{
+    order: 1;
+  }
+  
+  span{
+    width: 457px;
+    height: 35px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 31px;
+  }
+ 
+}
+&__profile{
+  background: none;
+  width: 668px;
+  height: 320px;
+}
+&__profiles{
+  width: 700px; //668
+  height: 440px;
+}
+&__cm{
+  width: 200px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  margin-right: 10px;
+}
+&__cm1{
+  width: 202px;
+  height: 341px;
+  background: $color-body ;
+  border-radius:20px;
+}
+&__cm2{
+  margin-top: 25px;
+  width: 202px;
+  height: 88px;
+  background: $color-body ;
+  border-radius: 20px;
+  
+} 
+&__initial{
+  width: 500px;
+  display: flex;
+  height: 290px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin: 0 auto;
+  .item{
+    width: 148px;
+    height: 60px;
+    span{
+    width: 145px;
+    height: 13px;
+    margin-top: -5px;
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    }
+    input{
+      margin-top: 5px;
+      width: 148px;
+      height: 34px;
+      font-size: 15px;
+      border: 1px solid $color-border;
+      border-radius:5px;
+    }
+    input[type='date']{
+     height: 34px;
+     line-height: 40px;
+     font-size: 16px;
+
+    }
+  }
+  .login{
+    order:-5;
+  }
+}
+&__sex{
+  width: 148px;
+  height: 34px;
+  margin-top: 5px;
+ @include flex__ca;
+  border-radius:5px;
+  border: 1px solid $color-border;
+  label{
+    width: 35px;
+    visibility: hidden;
+  }
+  label:before{
+    font-size: 16px;
+    content:"Муж";
+    visibility: visible;
+  }
+   label:nth-last-child(1):before{
+    font-size: 16px;
+    content:"Жен";
+    visibility: visible;
+   }
+
+}
+.safe{
+  display: block;
+  height: 34px;
+  margin-top: 20px;
+  input{
+    margin-top: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    line-height: 22px;
+    font-size: 20px;
+  }
+}
+.exitt{
+  display: block;
+  width: 148px;
+  height: 60px;
+  margin-top: 20px;
+  .main__exit{
+    width: 148px;
+    height: 34px;
+    border-radius:5px;
+    border: 1px solid $color-border;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+}
+.empty{
+  display: block;
+  width: 148px;
+  height: 34px;
+}
+&__sexbar{
+  height: 20px;
+}
+&__theme{
+  display: none;
+}
+}
+.nope{
+  display: none;
+}
+}
