@@ -55,25 +55,25 @@
         </div>
       </div>
     </div>
-  <div class="login" id="login">
-    <div class="login__container">
-      <div class="login__select">
+  <div class="logina" id="login">
+    <div class="logina__container">
+      <div class="logina__select">
         <span id="logBtn">Авторизация</span>
-        <div class="login__bar"></div>
+        <div class="logina__bar"></div>
         <span onclick="show('reg'); hide('login'); hide('menu'); paint('regBtn')">Регистрация</span>
       </div>
-      <div class="login__logo">
+      <div class="logina__logo">
         <img src="img/logo-white-big.png" alt="LOGO">
       </div>
-      <form action="auth.php" class="login__auth" method="POST">
-        <input class="inp" name="login" type="text" placeholder="Логин...">
+      <form action="auth.php" class="logina__auth" method="POST">
+        <input class="inp" name="logina" type="text" placeholder="Логин...">
         <input class="inp" name="password" type="password" placeholder="Пароль...">
-        <div  class="login__faggottext"><span id="wrong">неверный логин или пароль</span>
+        <div  class="logina__faggottext"><span id="wrong">неверный логин или пароль</span>
         </div>
-        <div class="login__faggot"><a href="forget.php">Забыли пароль?</a></div>
-        <input name="do_login" type="submit" class="login__login" value="ВОЙТИ">
+        <div class="logina__faggot"><a href="forget.php">Забыли пароль?</a></div>
+        <input name="do_logina" type="submit" class="logina__login" value="ВОЙТИ">
       </form>
-      <div class="login__socialauth">
+      <div class="logina__socialauth">
         <span>Войти через:</span>
         <div>
           <div><img src="img/gno.png" alt="GOOGLE"></div>
@@ -82,25 +82,25 @@
       </div>
     </div>
   </div>
-<div class="registr" id="reg">
-  <div class="registr__container noclose">
-    <div class="registr__select">
+<div class="registra" id="reg">
+  <div class="registra__container noclose">
+    <div class="registra__select">
       <span id="logBtn" onclick="show('login'); hide('reg'); hide('menu'); paint('logBtn')">Авторизация</span>
-      <div class="login__bar"></div>
+      <div class="logina__bar"></div>
       <span id="regBtn">Регистрация</span>
     </div>
-    <div class="registr__logo">
+    <div class="registra__logo">
       <img src="img/logo-white-big.png" alt="LOGO">
     </div>
-    <form action="reg.php" class="registr__auth" method="POST">
-      <input class="inp" name="login" type="text" placeholder="Логин...">
-      <div class="login__has"><span id="inc">1</span></div>
+    <form action="reg.php" class="registra__auth" method="POST">
+      <input class="inp" name="logina" type="text" placeholder="Логин...">
+      <div class="logina__has"><span id="inc">1</span></div>
       <input class="inp" name="password" type="password" placeholder="Пароль...">
       <input class="inp" name="email" type="text" placeholder="Почта...">
-      <input class="login__login registr__login" name="do_signup" type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+      <input class="logina__login registra__login" name="do_signup" type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
     </form> 
-    <div class="login__sociallog"> 
-      <div class="login__socialauth">
+    <div class="logina__sociallog"> 
+      <div class="logina__socialauth">
         <span>Войти через:</span>
         <div>
           <div><img src="img/gno.png" alt="GOOGLE"></div>
