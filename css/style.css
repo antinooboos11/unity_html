@@ -1076,6 +1076,410 @@ html, body, main {
   width: 30px;
 }
 
+.menu, .login, .registr {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 21, 51, 0.8);
+  z-index: 3;
+}
+
+.menu div, .login div, .registr div {
+  z-index: 4;
+}
+
+.menu__container, .login__container, .registr__container {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 313px;
+  height: 461px;
+  background-color: #0F1533;
+  z-index: 2;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px;
+  padding: 13px 5px;
+}
+
+.menu__header, .login__header, .registr__header {
+  position: relative;
+  margin: 0 auto;
+  width: 285px;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 9px;
+  background-color: #01082B;
+  border-radius: 7px;
+}
+
+.menu__header .content__horizontal, .login__header .content__horizontal, .registr__header .content__horizontal {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+}
+
+.menu__header .menu__login, .login__header .menu__login, .registr__header .menu__login {
+  width: 145px;
+  background: none;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 auto;
+  margin-left: 30px;
+  width: 145px;
+  line-height: 35px;
+  background: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.menu__header span, .login__header span, .registr__header span {
+  padding: 0;
+  display: block;
+  height: 25px;
+  font-size: 18px;
+  line-height: 18px;
+  font-style: bold;
+}
+
+.menu__header span:last-child(3), .login__header span:last-child(3), .registr__header span:last-child(3) {
+  margin-top: 20px;
+}
+
+.menu__profile, .login__profile, .registr__profile {
+  width: 255px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6px;
+}
+
+.menu__profile img, .login__profile img, .registr__profile img {
+  width: 52px;
+  height: 52px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -15px;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+}
+
+.menu__profile span, .login__profile span, .registr__profile span {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu__mid, .login__mid, .registr__mid {
+  width: 100%;
+}
+
+.menu__cm, .login__cm, .registr__cm {
+  height: 53px;
+  margin-top: 15px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  line-height: 53px;
+  color: #01082B;
+  text-align: center;
+}
+
+.menu__logo, .login__logo, .registr__logo {
+  height: 71px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.menu__middle, .login__middle, .registr__middle {
+  margin: 0 auto;
+  margin-top: 33px;
+  width: 163px;
+  height: 30px;
+}
+
+.menu__nav, .login__nav, .registr__nav {
+  margin: 0 auto;
+  width: 270px;
+  height: 31px;
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #01082B;
+  border-radius: 5px;
+}
+
+.menu__nav .menu__nax, .login__nav .menu__nax, .registr__nav .menu__nax {
+  width: 251px;
+  background-color: #01082B;
+  border-radius: 5px;
+}
+
+.menu__nav div, .login__nav div, .registr__nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 30px;
+  width: 90px;
+  text-align: center;
+  line-height: 31px;
+  font-size: 17px;
+  font-style: bold;
+}
+
+.menu__login, .login__login, .registr__login {
+  border: none;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 131px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.03);
+  font-size: 18px;
+  line-height: 35px;
+  font-style: bold;
+  border-radius: 5px;
+}
+
+.menu__social, .login__social, .registr__social {
+  height: 30px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 25px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__social img, .login__social img, .registr__social img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu__socialbottom, .login__socialbottom, .registr__socialbottom {
+  height: 30px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 30px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__socialbottom img, .login__socialbottom img, .registr__socialbottom img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu__select, .login__select, .registr__select {
+  height: 30px;
+  margin: 0 auto;
+  padding: 6px 9px;
+  background-color: #01082B;
+  border-radius: 5px;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__bar, .login__bar, .registr__bar {
+  width: 2px;
+  height: 18px;
+  border-radius: 1px;
+  background-color: #FFFFFF;
+}
+
+.menu__select {
+  padding: 6px 20px;
+}
+
+.login__container, .registr__container {
+  padding: 13px 13px;
+}
+
+.login__logo, .registr__logo {
+  margin-top: 25px;
+}
+
+.login__auth, .registr__auth {
+  margin-top: 25px;
+}
+
+.login__auth .inp, .registr__auth .inp {
+  background: rgba(255, 255, 255, 0.03);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  font-size: 17px;
+  line-height: 17px;
+  vertical-align: middle;
+  padding: 7px;
+  color: #FFFFFF;
+  margin-top: 17px;
+}
+
+.login__auth .inp:nth-child(1), .registr__auth .inp:nth-child(1) {
+  margin-top: 0px;
+}
+
+.login__auth .inp:focus, .registr__auth .inp:focus {
+  -webkit-box-shadow: inset 0px 0px 3px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px 0px 3px 1px rgba(255, 255, 255, 0.5);
+}
+
+.login__faggottext, .login__has, .registr__faggottext, .registr__has {
+  display: block;
+  width: 198px;
+  height: 13px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+
+.login__faggottext span, .login__has span, .registr__faggottext span, .registr__has span {
+  display: block;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FF0000;
+  opacity: 0;
+}
+
+.login__has, .registr__has {
+  margin: 0 auto;
+  margin-top: 1px;
+  padding: 0px;
+  width: 100%;
+  height: 16px;
+}
+
+.login__has span, .registr__has span {
+  opacity: 0;
+  line-height: 16px;
+}
+
+.login__faggot, .registr__faggot {
+  display: block;
+  margin: 0 auto;
+  height: 15px;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.login__faggot a, .registr__faggot a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.login__login, .registr__login {
+  margin-top: 27px;
+}
+
+.login__socialauth, .registr__socialauth {
+  width: 133px;
+  height: 75px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+.login__socialauth span, .registr__socialauth span {
+  margin-top: 6px;
+  display: block;
+  text-align: center;
+  height: 19px;
+  font-size: 17px;
+  line-height: 19px;
+}
+
+.login__socialauth div, .registr__socialauth div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.login__socialauth div div, .registr__socialauth div div {
+  margin-top: 6px;
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registr__login {
+  margin-top: 17px;
+  width: 241px;
+}
+
+.registr input[type='password'] {
+  margin-top: 0px;
+}
+
 .main {
   max-height: 800px;
   background: #01082B;
