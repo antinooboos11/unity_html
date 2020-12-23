@@ -1071,7 +1071,11 @@ html, body, main {
   width: 30px;
 }
 
+<<<<<<< HEAD
 .menu, .logina, .registra {
+=======
+.menu, .login, .registr {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   position: fixed;
   display: none;
   top: 0;
@@ -1081,11 +1085,19 @@ html, body, main {
   z-index: 3;
 }
 
+<<<<<<< HEAD
 .menu div, .logina div, .registra div {
   z-index: 4;
 }
 
 .menu__container, .logina__container, .registra__container {
+=======
+.menu div, .login div, .registr div {
+  z-index: 4;
+}
+
+.menu__container, .login__container, .registr__container {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   margin: 0 auto;
   margin-top: 80px;
   width: 313px;
@@ -1097,7 +1109,11 @@ html, body, main {
   padding: 13px 5px;
 }
 
+<<<<<<< HEAD
 .menu__header, .logina__header, .registra__header {
+=======
+.menu__header, .login__header, .registr__header {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   position: relative;
   margin: 0 auto;
   width: 285px;
@@ -1116,7 +1132,11 @@ html, body, main {
   border-radius: 7px;
 }
 
+<<<<<<< HEAD
 .menu__header .content__horizontal, .logina__header .content__horizontal, .registra__header .content__horizontal {
+=======
+.menu__header .content__horizontal, .login__header .content__horizontal, .registr__header .content__horizontal {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -1124,7 +1144,11 @@ html, body, main {
           transform: translatex(-50%);
 }
 
+<<<<<<< HEAD
 .menu__header .menu__login, .logina__header .menu__login, .registra__header .menu__login {
+=======
+.menu__header .menu__login, .login__header .menu__login, .registr__header .menu__login {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 145px;
   background: none;
   font-family: Comfortaa;
@@ -1139,7 +1163,11 @@ html, body, main {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .menu__header span, .logina__header span, .registra__header span {
+=======
+.menu__header span, .login__header span, .registr__header span {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   padding: 0;
   display: block;
   height: 25px;
@@ -1148,11 +1176,19 @@ html, body, main {
   font-style: bold;
 }
 
+<<<<<<< HEAD
 .menu__header span:last-child(3), .logina__header span:last-child(3), .registra__header span:last-child(3) {
   margin-top: 20px;
 }
 
 .menu__profile, .logina__profile, .registra__profile {
+=======
+.menu__header span:last-child(3), .login__header span:last-child(3), .registr__header span:last-child(3) {
+  margin-top: 20px;
+}
+
+.menu__profile, .login__profile, .registr__profile {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 255px;
   margin: 0 auto;
   display: -webkit-box;
@@ -1167,7 +1203,11 @@ html, body, main {
   padding: 0 6px;
 }
 
+<<<<<<< HEAD
 .menu__profile img, .logina__profile img, .registra__profile img {
+=======
+.menu__profile img, .login__profile img, .registr__profile img {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 52px;
   height: 52px;
   -o-object-fit: cover;
@@ -1177,17 +1217,29 @@ html, body, main {
   border: 1px solid #FFFFFF;
 }
 
+<<<<<<< HEAD
 .menu__profile span, .logina__profile span, .registra__profile span {
+=======
+.menu__profile span, .login__profile span, .registr__profile span {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
 
+<<<<<<< HEAD
 .menu__mid, .logina__mid, .registra__mid {
   width: 100%;
 }
 
 .menu__cm, .logina__cm, .registra__cm {
+=======
+.menu__mid, .login__mid, .registr__mid {
+  width: 100%;
+}
+
+.menu__cm, .login__cm, .registr__cm {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   height: 53px;
   margin-top: 15px;
   background-color: #FFFFFF;
@@ -1197,21 +1249,33 @@ html, body, main {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .menu__logo, .logina__logo, .registra__logo {
+=======
+.menu__logo, .login__logo, .registr__logo {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   height: 71px;
   width: 200px;
   margin: 0 auto;
   margin-top: 30px;
 }
 
+<<<<<<< HEAD
 .menu__middle, .logina__middle, .registra__middle {
+=======
+.menu__middle, .login__middle, .registr__middle {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   margin: 0 auto;
   margin-top: 33px;
   width: 163px;
   height: 30px;
 }
 
+<<<<<<< HEAD
 .menu__nav, .logina__nav, .registra__nav {
+=======
+.menu__nav, .login__nav, .registr__nav {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   margin: 0 auto;
   width: 270px;
   height: 31px;
@@ -1226,13 +1290,21 @@ html, body, main {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .menu__nav .menu__nax, .logina__nav .menu__nax, .registra__nav .menu__nax {
+=======
+.menu__nav .menu__nax, .login__nav .menu__nax, .registr__nav .menu__nax {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 251px;
   background-color: #01082B;
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .menu__nav div, .logina__nav div, .registra__nav div {
+=======
+.menu__nav div, .login__nav div, .registr__nav div {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1247,7 +1319,11 @@ html, body, main {
   font-style: bold;
 }
 
+<<<<<<< HEAD
 .menu__login, .logina__login, .registra__login {
+=======
+.menu__login, .login__login, .registr__login {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   border: none;
   color: #FFFFFF;
   display: -webkit-box;
@@ -1267,7 +1343,11 @@ html, body, main {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 .menu__social, .logina__social, .registra__social {
+=======
+.menu__social, .login__social, .registr__social {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   height: 30px;
   width: 190px;
   margin: 0 auto;
@@ -1281,12 +1361,20 @@ html, body, main {
           justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .menu__social img, .logina__social img, .registra__social img {
+=======
+.menu__social img, .login__social img, .registr__social img {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 30px;
   height: 30px;
 }
 
+<<<<<<< HEAD
 .menu__socialbottom, .logina__socialbottom, .registra__socialbottom {
+=======
+.menu__socialbottom, .login__socialbottom, .registr__socialbottom {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   height: 30px;
   width: 190px;
   margin: 0 auto;
@@ -1300,12 +1388,20 @@ html, body, main {
           justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .menu__socialbottom img, .logina__socialbottom img, .registra__socialbottom img {
+=======
+.menu__socialbottom img, .login__socialbottom img, .registr__socialbottom img {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 30px;
   height: 30px;
 }
 
+<<<<<<< HEAD
 .menu__select, .logina__select, .registra__select {
+=======
+.menu__select, .login__select, .registr__select {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   height: 30px;
   margin: 0 auto;
   padding: 6px 9px;
@@ -1323,7 +1419,11 @@ html, body, main {
           align-items: center;
 }
 
+<<<<<<< HEAD
 .menu__bar, .logina__bar, .registra__bar {
+=======
+.menu__bar, .login__bar, .registr__bar {
+>>>>>>> a442a576ed781908c633a25147af2a83af7b27b5
   width: 2px;
   height: 18px;
   border-radius: 1px;
