@@ -5,11 +5,15 @@
       .back{
         display: flex;
         height: 20px;
+        img{
+          width: 20px;
+        }
       }
     }
   }
 }
 .news {
+  margin-top: 10px;
   background-color: $color-main;
   border-radius: 5px;
   width: 100%;
@@ -175,7 +179,11 @@ input[type='button']{
 
 
 @media(min-width:769px){
-  .news{
+  .container_5{
+    
+  }
+  .mnews{
+    margin-top: 20px;
     &__short{
       text-align: center;
     }

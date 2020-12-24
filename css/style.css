@@ -1989,7 +1989,12 @@ html, body, main {
   height: 20px;
 }
 
+.main .mnew .main__inner .back img {
+  width: 20px;
+}
+
 .news {
+  margin-top: 10px;
   background-color: #0F1533;
   border-radius: 5px;
   width: 100%;
@@ -2200,7 +2205,10 @@ html, body, main {
 }
 
 @media (min-width: 769px) {
-  .news__short {
+  .mnews {
+    margin-top: 20px;
+  }
+  .mnews__short {
     text-align: center;
   }
 }
