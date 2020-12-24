@@ -1,9 +1,6 @@
-.container{
-  padding: 0 30px;
-}
-
 @media (max-width:769px){
 .index{
+  
   .main__inner{
     width: 100%;
     flex-wrap: unset;
@@ -60,17 +57,6 @@
   z-index: 5;
   
 }
-.box__top{
-  margin-top: 5px;
-  display: flex;
-  .desktop__select{
-    width: 315px;
-    margin: 0 auto; 
-   label{
-     font-size: 17px;
-   }
-  }
-}
 
 .news-item {
   position: relative;
@@ -113,9 +99,6 @@
 }
 
 @media(min-width:769px){
-  .container{
-    padding:0;
-  }
   .news-item{
     margin-top: 24px;
     width: 200px;
@@ -131,10 +114,7 @@
      width: 100%;
    }
   }
-  .box__top{
-    display: none;
-  }
- 
+
   .index{
     .main__inner{
       flex-wrap: wrap;

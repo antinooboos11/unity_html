@@ -195,7 +195,7 @@
       font-style: bold;
     }
   }
-  &__login {
+  &__logina {
     border: none;
     color: $color-second;
     display: flex;
@@ -260,7 +260,7 @@
     padding:6px 20px;
   }
 }
-.login, .registr {
+.logina, .registra {
   &__container {
     padding: 13px 13px;
   }
@@ -333,7 +333,7 @@
     font-size: 14px;
     line-height: 15px;  
   }
-  &__login {
+  &__logina {
     margin-top: 27px;
   }
   &__socialauth {
@@ -368,8 +368,8 @@
     }
   }
 }
-.registr {
-  &__login {
+.registra {
+  &__logina {
     margin-top: 17px;
     width: 241px;
   }

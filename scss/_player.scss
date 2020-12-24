@@ -1,15 +1,22 @@
 .noscroll{
-  height: 100%;
-.main{
   padding: 0px;
- overflow: none;
-  &__inner{
+  overflow: none;
+  .main__inner{
+    padding: 5px 6px;
+    .live__information{
+      width: 303px;
+      height: 104px;
+      margin: 0 auto;
+      margin-top: 10px;
+      background: $color-second;
+      border-radius:5px;
+    }
     .container__player {
+      margin-top: 5px;
       min-width: 375px;
       height: 100%;
       margin-left: -36px;
       margin-right: -36px;
-      position: absolute;
       .content__player {
         width: 375px;
         height: 195px;
@@ -18,29 +25,20 @@
         margin: 0 auto;
         border-radius: 5px;
         border: solid 2px #0F1533;
-        position: absolute;  
        
     }
   }
   }
  }
-}
-@media(max-width:769px){
-  .noscroll{
-    .main{
-      overflow: visible;
-      
-    }
-  }
-}
+
+
 
 @media(min-width:769px){
   .container{
     padding:0;
   }
   .noscroll{
-    .main{
-      
+      height: 505px;
       .playerbox{
         .main__inner{
         margin: 0;
@@ -68,4 +66,3 @@
       
     }
   }
-}

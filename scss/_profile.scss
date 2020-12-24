@@ -1,19 +1,6 @@
-@media (max-width:769px){
-.body{
-  background: $color-second;  
-}
-}
+
 
 .main{
-  height: 333px;
-  margin-top: 7px;
-  background: $color-bg;
-  border-radius: 7px;
-  margin: 0 auto;
- 
-  &__cm{
-    display: none;
-  }
   &__profiles{
     width: 275px;
     margin: 0 auto;
@@ -206,7 +193,7 @@
     color: $color-second;
     border-radius:5px;
   }
- 
+
   &__exit{
     width: 131px;
     height: 35px;
@@ -223,24 +210,17 @@
     flex-direction: column;
   }
   
+  
 }
+
+
 
 //media
 @media (min-width:769px){
 
-  .body{
-    background: $color-body;
-  }
-
-
-
+.profile__main{
+  
 .main{
-width: 910px;
-height: 504px;
-padding: 25px;
-display: flex;
-border:1px solid $color-border;
-border-radius:20px;
 &__info{
   margin: 0 auto;
   width: 500px;
@@ -290,31 +270,11 @@ border-radius:20px;
   height: 320px;
 }
 &__profiles{
+  margin-top: 25px;
   width: 700px; //668
   height: 440px;
 }
-&__cm{
-  width: 200px;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  align-self: start;
-  margin-right: 10px;
-}
-&__cm1{
-  width: 202px;
-  height: 341px;
-  background: $color-body ;
-  border-radius:20px;
-}
-&__cm2{
-  margin-top: 25px;
-  width: 202px;
-  height: 88px;
-  background: $color-body ;
-  border-radius: 20px;
-  
-} 
+
 &__initial{
   width: 500px;
   display: flex;
@@ -415,6 +375,7 @@ border-radius:20px;
 }
 &__theme{
   display: none;
+}
 }
 }
 .nope{
