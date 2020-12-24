@@ -584,7 +584,6 @@ html, body, main {
   border-radius: 5px;
   background: #01082B;
   font-size: 18px;
-  padding: 3px 0px 0px 0px;
   z-index: 5;
   position: absolute;
   top: 55px;
@@ -599,6 +598,23 @@ html, body, main {
 
 .header__right .headers__select input:checked + label {
   color: red;
+}
+
+.header__right .headers__select .dateevent {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 30px;
+  height: 100%;
+  background: #1C4CF5;
+  border-radius: 5px;
+  margin-right: -5px;
+}
+
+.header__right .headers__select .headers__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 30px;
 }
 
 .header__select {
@@ -802,13 +818,12 @@ html, body, main {
   .header__right .headers__select {
     width: 326px;
     height: 35px;
+    line-height: 35px;
     top: 7px;
     left: 580px;
   }
-  .header__right .headers__select label {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+  .header__right .headers__select .dateevent {
+    width: 35px;
   }
   .search-box:hover > .search-txt {
     width: 215px;
@@ -826,7 +841,7 @@ html, body, main {
 
 .main {
   width: 100%;
-  min-height: 333px;
+  min-height: 100%;
   margin-top: 7px;
   background: #01082B;
   border-radius: 7px;
@@ -850,15 +865,10 @@ html, body, main {
   .main {
     margin-top: 150px;
     width: 910px;
-    max-height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .main__iiner {
     width: 100%;
-    height: 100%;
-    padding: 0px 0px 25px 25px;
+    padding: 0px 0px 20px 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2005,6 +2015,9 @@ html, body, main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: 11px;
   line-height: 17px;
   text-align: left;
@@ -2035,6 +2048,9 @@ html, body, main {
 .news__long {
   width: 100%;
   padding: 10px 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .news__title {
@@ -2205,6 +2221,25 @@ html, body, main {
 }
 
 @media (min-width: 769px) {
+  .mnew {
+    width: 500px;
+  }
+  .mnew .main__inner {
+    height: 500px;
+    display: block;
+  }
+  .mnew .shit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_5 {
+    bottom: 0;
+  }
   .mnews {
     margin-top: 20px;
   }

@@ -74,12 +74,24 @@ html, body, main {
       background: $color-bg;
       font-size: 18px;
       @include input;
-      padding: 3px 0px 0px 0px;
       z-index: 5;
       position: absolute;
       top: 55px;
       left: 50%;
       transform: translateX(-50%);
+      .dateevent{
+      align-self: center;
+      width: 30px;
+      height: 100%;
+      background: $color-body;
+      border-radius:5px;
+      margin-right: -5px;
+      }
+      .headers__link{
+       color: $color-second-bg;
+       text-decoration: none;
+       line-height: 30px;
+      }
     }
   }
   &__select{
@@ -223,13 +235,14 @@ html, body, main {
       .headers__select{
       width: 326px;
       height: 35px;
+      line-height: 35px;
       top: 7px;
       left: 580px;
-      label{
-        font-style: normal;
-        font-weight: normal;
-         font-size: 18px;
-       }
+      
+      .dateevent{
+        width: 35px;
+        }
+
     }
    }
  
